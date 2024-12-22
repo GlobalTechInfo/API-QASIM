@@ -226,7 +226,6 @@ ringtone(query)
   });
 
 ```
-```
 **EXAMPLE OUTPUT**
 ```
 [
