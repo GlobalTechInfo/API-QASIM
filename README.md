@@ -1,50 +1,16 @@
 ### Instalation :
 ```bash
-> npm i qasim-api
+> npm i api-qasim
 ```
 
-### Import In mjs
-```js
-// Importing in another .mjs file
-import Qasim from 'qasim-api';
-
-Qasim.pinterest();
-Qasim.wallpaper();
-
-```
-
-### Import In cjs
-```js
-
- const { Qasim } = require('qasim-api');
- Qasim.pinterest();
- Qasim.wallpaper();
-
-```
 ### Example Usage FB VIDEO
 
 ```js
-// Importing the 'Qasim' object from your package
-const { Qasim } = require('qasim-api');
+const { fbvdl } = require('api-qasim');
 
-// Now, they can use the 'fbvdl' function as part of the 'Qasim' object
-const url = 'https://www.facebook.com/video';
-Qasim.fbvdl(url)
-  .then(result => {
-    console.log('Downloaded Video Links:', result);
-  })
-  .catch(error => {
-    console.error('Error:', error);
-  });
-
-```
-```js
-// Importing the 'Qasim' object from your package
-import Qasim from 'qasim-api';
-
-// Now, they can use the 'fbvdl' function as part of the 'Qasim' object
-const url = 'https://www.facebook.com/video';
-Qasim.fbvdl(url)
+// Now, use the 'fbvdl' function to download a Facebook video
+const url = 'https://www.facebook.com/videoid';
+fbvdl(url)
   .then(result => {
     console.log('Downloaded Video Links:', result);
   })
@@ -72,12 +38,11 @@ Qasim.fbvdl(url)
 
 ### Example Usage HappyMods
 ```js
-// Importing the 'Qasim' object from your package
-const { Qasim } = require('qasim-api');
+const { happymod } = require('api-qasim');
 
-// Now, they can use the 'happymod' function as part of the 'Qasim' object
-const query = 'Telegram';
-Qasim.happymod(query)
+// Using the 'happymod' function
+const query = 'Telegram'; // Example query
+happymod(query)
   .then(result => {
     console.log('Apps Found on HappyMod:', result);
   })
@@ -85,20 +50,6 @@ Qasim.happymod(query)
     console.error('Error:', error);
   });
 
-```js
-// Importing the 'Qasim' object from your package
-import Qasim from 'qasim-api';
-
-// Now, they can use the 'happymod' function as part of the 'Qasim' object
-const query = 'Telegram';
-Qasim.happymod(query)
-  .then(result => {
-    console.log('Apps Found on HappyMod:', result);
-  })
-  .catch(error => {
-    console.error('Error:', error);
-  });
-  ```
 
 **EXAMPLE OUTPUT**
 ```
@@ -124,33 +75,18 @@ Qasim.happymod(query)
 -------
 ### Example Usage Pinterest
 ```js
-// Importing the 'Qasim' object from your package
-const { Qasim } = require('qasim-api');
+const { pinterest } = require('api-qasim');
 
-// Using the 'pinterest' function from the Qasim object
-const query = 'cats'; // Search term for Pinterest
-Qasim.pinterest(query)
+const query = 'cats';
+
+pinterest(query)
   .then(result => {
     console.log('Pinterest Search Results:', result);
   })
   .catch(error => {
     console.error('Error:', error);
   });
-```
-```js
 
-// Importing the 'Qasim' object from your package
-import Qasim from 'qasim-api';
-
-// Using the 'pinterest' function from the Qasim object
-const query = 'cats'; // Search term for Pinterest
-Qasim.pinterest(query)
-  .then(result => {
-    console.log('Pinterest Search Results:', result);
-  })
-  .catch(error => {
-    console.error('Error:', error);
-  });
 ```
 **EXAMPLE OUTPUT**
 ```
@@ -168,33 +104,21 @@ Qasim.pinterest(query)
 
 ### Example Usage TikTok
 ```js
-// Importing the 'Qasim' object from your package
-const { Qasim } = require('qasim-api');
+// Importing the 'tiktok' function from your package
+const { tiktok } = require('api-qasim');
 
-// Using the 'tiktokDl' function from the Qasim object
 const url = 'https://www.tiktok.com/@user/video/1234567890'; // The TikTok video URL
-Qasim.tiktokDl(url)
+
+tiktok(url)
   .then(result => {
-    console.log('TikTok Video Download Link:', result.videoUrl);
+    console.log('TikTok Response:', result);
   })
   .catch(error => {
     console.error('Error:', error);
   });
-```
-```js
-// Importing the 'Qasim' object from your package
-import Qasim from 'qasim-api';
 
-// Using the 'tiktokDl' function from the Qasim object
-const url = 'https://www.tiktok.com/@user/video/1234567890'; // The TikTok video URL
-Qasim.tiktokDl(url)
-  .then(result => {
-    console.log('TikTok Video Download Link:', result.videoUrl);
-  })
-  .catch(error => {
-    console.error('Error:', error);
-  });
 ```
+
 **EXAMPLE OUTPUT**
 ```
 {
@@ -250,52 +174,37 @@ Qasim.tiktokDl(url)
 
 ### Example Usage StyleText
 ```js
-// Importing the 'Qasim' object from your package
-const { Qasim } = require('qasim-api');
+const { styletext } = require('api-qasim');
 
-// Using the 'styletext' function from the Qasim object
-const teks = "Hello, world!"; // The text to convert
-Qasim.styletext(teks)
+const query = "Hello";
+
+styletext(query)
   .then(result => {
     console.log('Converted Text Styles:', result);
   })
   .catch(error => {
     console.error('Error:', error);
   });
-```
 
-```js
-// Importing the 'Qasim' object from your package
-import Qasim from 'qasim-api';
-
-// Using the 'styletext' function from the Qasim object
-const teks = "Hello, world!"; // The text to convert
-Qasim.styletext(teks)
-  .then(result => {
-    console.log('Converted Text Styles:', result);
-  })
-  .catch(error => {
-    console.error('Error:', error);
-  });
 ```
 **EXAMPLE OUTPUT**
 ```
 [
   {
     "name": "bold",
-    "result": "𝗛𝗲𝗹𝗹𝗼, 𝘄𝗼𝗿𝗹𝗱!",
+    "result": "𝗛𝗲𝗹𝗹𝗼",
     "creator": "Qasim Ali",
     "status": true
   },
   {
     "name": "italic",
-    "result": "𝑯𝒆𝒍𝒍𝒐, 𝒘𝒐𝒓𝒍𝒅!",
+    "result": "𝑯𝒆𝒍𝒍𝒐",
     "creator": "Qasim Ali",
     "status": true
   },
   {
     "name": "underline",
-    "result": "𝑯𝑬𝑳𝑳𝑶, 𝑾𝑶𝑹𝑳𝑫!",
+    "result": "𝑯𝑬𝑳𝑳𝑶",
     "creator": "Qasim Ali",
     "status": true
   }
@@ -304,32 +213,19 @@ Qasim.styletext(teks)
 -------
 ### Example Usage Ringtone
 ```js
-// Importing the 'Qasim' object from your package
-const { Qasim } = require('qasim-api');
+const { ringtone } = require('api-qasim');
 
-// Using the 'ringtone' function from the Qasim object
-const title = "Shape of You"; // The title of the song or ringtone to search
-Qasim.ringtone(title)
+const query = "shape of you";
+
+ringtone(query)
   .then(result => {
     console.log('Ringtone Results:', result);
   })
   .catch(error => {
     console.error('Error:', error);
   });
+
 ```
-```js
-// Importing the 'Qasim' object from your package
-import Qasim from 'qasim-api';
-
-// Using the 'ringtone' function from the Qasim object
-const title = "Shape of You"; // The title of the song or ringtone to search
-Qasim.ringtone(title)
-  .then(result => {
-    console.log('Ringtone Results:', result);
-  })
-  .catch(error => {
-    console.error('Error:', error);
-  });
 ```
 **EXAMPLE OUTPUT**
 ```
@@ -346,32 +242,18 @@ Qasim.ringtone(title)
 ------
 ### Example Usage Wikimedia
 ```js
-// Importing the 'Qasim' object from your package
-const { Qasim } = require('qasim-api');
+const { wikimedia } = require('api-qasim');
 
-// Using the 'wikimedia' function from the Qasim object
-const title = "Eiffel Tower"; // The title of the image or media they want to search
-Qasim.wikimedia(title)
+const query = "Eiffel Tower";
+
+wikimedia(query)
   .then(result => {
     console.log('Wikimedia Results:', result);
   })
   .catch(error => {
     console.error('Error:', error);
   });
-```
-```js
-// Importing the 'Qasim' object from your package
-import Qasim from 'qasim-api';
 
-// Using the 'wikimedia' function from the Qasim object
-const title = "Eiffel Tower"; // The title of the image or media they want to search
-Qasim.wikimedia(title)
-  .then(result => {
-    console.log('Wikimedia Results:', result);
-  })
-  .catch(error => {
-    console.error('Error:', error);
-  });
 ```
 **EXAMPLE OUTPUT**
 ```
@@ -388,32 +270,18 @@ Qasim.wikimedia(title)
 --------
 ### Example Usage MediaUmma
 ```js
-// Importing the 'Qasim' object from your package
-const { Qasim } = require('qasim-api');
+const { mediaumma } = require('api-qasim');
 
-// Using the 'MediaUmma' function from the Qasim object
-const url = "https://www.mediaumma.com/some-media-page"; // The URL to the media page
-Qasim.MediaUmma(url)
+const url = "https://www.mediaumma.com/some-media-page";
+
+mediaumma(url)
   .then(result => {
     console.log('MediaUmma Results:', result);
   })
   .catch(error => {
     console.error('Error:', error);
   });
-```
-```js
-// Importing the 'Qasim' object from your package
-import Qasim from 'qasim-api';
 
-// Using the 'MediaUmma' function from the Qasim object
-const url = "https://www.mediaumma.com/some-media-page"; // The URL to the media page
-Qasim.MediaUmma(url)
-  .then(result => {
-    console.log('MediaUmma Results:', result);
-  })
-  .catch(error => {
-    console.error('Error:', error);
-  });
 ```
 **EXAMPLE OUTPUT**
 ```
@@ -436,30 +304,15 @@ Qasim.MediaUmma(url)
 -------
 ### Example Usage AnimeQuotes
 ```js
-// Importing the 'Qasim' object from your package
-const { Qasim } = require('qasim-api');
-
-// Using the 'quotesAnime' function from the Qasim object
-Qasim.quotesAnime()
+const { quotesanime } = require('api-qasim');
+quotesanime()
   .then(result => {
     console.log('Anime Quotes:', result);
   })
   .catch(error => {
     console.error('Error:', error);
   });
-```
-```js
-// Importing the 'Qasim' object from your package
-import Qasim from 'qasim-api';
 
-// Using the 'quotesAnime' function from the Qasim object
-Qasim.quotesAnime()
-  .then(result => {
-    console.log('Anime Quotes:', result);
-  })
-  .catch(error => {
-    console.error('Error:', error);
-  });
 ```
 **EXAMPLE OUTPUT**
 ```
@@ -481,30 +334,18 @@ Qasim.quotesAnime()
 --------
 ### Example Usage Wallpapers
 ```js
-// Importing the 'Qasim' object from your package
-const { Qasim } = require('qasim-api');
+const { wallpaper } = require('api-qasim');
 
-// Using the 'wallpaper' function from the Qasim object
-Qasim.wallpaper('nature', '1')
+const query = 'nature';
+
+wallpaper(query)
   .then(result => {
     console.log('Wallpaper Results:', result);
   })
   .catch(error => {
     console.error('Error:', error);
   });
-```
-```js
-// Importing the 'Qasim' object from your package
-import Qasim from 'qasim-api';
 
-// Using the 'wallpaper' function from the Qasim object
-Qasim.wallpaper('nature', '1')
-  .then(result => {
-    console.log('Wallpaper Results:', result);
-  })
-  .catch(error => {
-    console.error('Error:', error);
-  });
 ```
 **EXAMPLE OUTPUT**
 ```
@@ -513,7 +354,7 @@ Qasim.wallpaper('nature', '1')
   "status": true,
   "results": [
     {
-      "title": "Nature Wallpaper 1",
+      "title": "Nature Wallpaper",
       "type": "HD",
       "source": "https://www.besthdwallpaper.com/nature/nature-wallpaper-1.html",
       "image": [
