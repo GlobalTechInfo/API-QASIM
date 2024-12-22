@@ -49,7 +49,7 @@ happymod(query)
   .catch(error => {
     console.error('Error:', error);
   });
-
+```
 
 **EXAMPLE OUTPUT**
 ```
