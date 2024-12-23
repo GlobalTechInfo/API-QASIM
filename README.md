@@ -36,6 +36,43 @@ fbvdl(url)
 ```
 -------
 
+### Example Usage Twitter
+
+```js
+const { twitter } = require('api-qasim');
+
+const url = 'https://x.com/DailyUrduPoint/status/1869340074971967576?s=19';
+
+twitter(url)
+  .then(result => {
+    console.log('Twitter Results:', result);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+
+  ```
+**EXAMPLE OUTPUT
+```
+{
+  "creator": "Qasim Ali",
+  "found": true,
+  "media": [
+    {
+      "url": "https://video.twimg.com/ext_tw_video/1869339984085594112/pu/vid/avc1/720x720/ClxCXcpzmewB1yvp.mp4",
+      "type": "video"
+    }
+  ],
+  "date": "Wed Dec 18 11:12:59 +0000 2024",
+  "likes": 63,
+  "replies": 3,
+  "retweets": 12,
+  "authorName": "UrduPoint اردوپوائنٹ",
+  "authorUsername": "DailyUrduPoint"
+}
+```
+-------
+
 ### Example Usage HappyMods
 ```js
 const { happymod } = require('api-qasim');
@@ -101,6 +138,7 @@ pinterest(query)
   ]
 }
 ```
+-------
 
 ### Example Usage TikTok
 ```js
@@ -171,6 +209,7 @@ tiktok(url)
 }
 
 ```
+----------
 
 ### Example Usage StyleText
 ```js
@@ -361,6 +400,57 @@ wallpaper(query)
         "https://www.besthdwallpaper.com/images/nature1-1080.jpg",
         "https://www.besthdwallpaper.com/images/nature1-4k.jpg"
       ]
+}
+```
+-----------
+
+### Example Usage Bitly
+```js
+const { bitly } = require('api-qasim');
+
+const url = 'https://github.com/GlobalTechInfo/ULTRA-MD';
+
+bitly(url)
+  .then(result => {
+    console.log('Bitly Results:', result);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+
+```
+**EXAMPLE OUTPUT**
+```
+{
+  "creator": "Qasim Ali",
+  "status": true,
+  "result": "https://bit.ly/3VO4EnG"
+}
+```
+-------
+
+### Example Usage Tiny Url
+```js
+const { tiny } = require('api-qasim');
+
+const url = 'https://github.com/GlobalTechInfo/ULTRA-MD';
+
+tiny(url)
+  .then(result => {
+    console.log('Tiny URL Results:', result);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+
+
+```
+**EXAMPLE OUTPUT**
+```
+{
+  "creator": "Qasim Ali",
+  "status": true,
+  "result": "https://tinyurl.com/2cw7pc5f"
 }
 ```
 ----------
