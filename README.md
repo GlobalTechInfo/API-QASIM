@@ -52,7 +52,8 @@ twitter(url)
   });
 
   ```
-**EXAMPLE OUTPUT
+**EXAMPLE OUTPUT**
+
 ```
 {
   "creator": "Qasim Ali",
