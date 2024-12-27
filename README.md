@@ -104,7 +104,7 @@ Qasim.wallpaper('query');   //wallpapers search query e.g 'technology'
 Qasim.styletext('teks');   // text that you wana convert in various styles e.g 'hello'
 
 
-Qasim.ringtone('Title');  // title of the ringtone that you wana search e.g 'Shape of You'
+Qasim.ringtone('title');  // title of the ringtone that you wana search e.g 'Shape of You'
 
 
 Qasim.mediaumma('url');   // some media url from mediaumma website
@@ -122,10 +122,10 @@ Qasim.xdown('url');       // url of twitter media, complete twitter scraper
 Qasim.stickersearch('query');  // query for sticker search e.g 'Babar Azam'
 
 
-Qasim.trendtwit('country name');  // Trending Twitter Tags. use Country e.g 'Pakistan'
+Qasim.trendtwit('country');  // Trending Twitter Tags. use Country e.g 'Pakistan'
 
 
-Qasim.zerochan('anime name');     // some anime name e.g 'itachi'
+Qasim.zerochan('query');     // some anime name e.g 'itachi'
 
 
 Qasim.bitly('url');     //  url that you wana convert/shorten to bit.ly
@@ -134,7 +134,7 @@ Qasim.bitly('url');     //  url that you wana convert/shorten to bit.ly
 Qasim.webtoons('query');  // some search query e.g 'ignite'
 
 
-Qasim.facebook('fb video url');  // works well with reels
+Qasim.facebook('url');  // works well with reels
 
 
 Qasim.ssweb('url');     // url of the page from where you wana get screenshot
@@ -146,43 +146,43 @@ Qasim.pinterest('query');  // image search query e.g 'Electronics'
 Qasim.gempa();   // Earthquake info only for Indonesia
 
 
-Qasim.cariresep('url');  // Food Recipes web url e.g
+Qasim.cariresep('url');  // Food Recipes web url e.g https://resepkoki.id/resep-nasi-daun-jeruk-praktis-untuk-menu-sehari-hari
 
 
 Qasim.tinyurl('url');    // Link shortener , url that you wana shorten
 
 
-Qasim.apkmirror('apk name');   // some apk search query e.g 'whatsapp'
+Qasim.apkmirror('querry');   // some apk search query e.g 'whatsapp'
 
 
-Qasim.weather('City or Country'); // weather info query e.g 'Lahore'
+Qasim.weather('city'); // weather info query e.g 'Lahore'
 
 
-Qasim.apksearch('apk name');     // some apk search query e.g 'facebook'
+Qasim.apksearch('query');     // some apk search query e.g 'facebook'
 
 
-Qasim.happymod('apk name');      // some apk search query e.g 'Telegram'
+Qasim.happymod('query');      // some apk search query e.g 'Telegram'
 
 
-Qasim.mangatoon('anime name');  // some anime name e.g 'nezoku'
+Qasim.mangatoon('search');  // some anime name e.g 'nezoku'
 
 
 Qasim.quotesanime();
 
 
-Qasim.artinama('name');    // some name for india only
+Qasim.artinama('query');    // some name for india only
 
 
 Qasim.wattpad('query');    // wattpad search query e.g 'japan'
 
 
-Qasim.playstore'Apk Name');   // some apk search query e.g 'whatsapp'
+Qasim.playstore('search');   // some apk search query e.g 'whatsapp'
 
 
 Qasim.wikisearch('query');    // wikipedia search query e.g 'heroku'
 
 
-Qasim.konachan('query');
+Qasim.konachan('query');    // anime search query e.g 'neko'
 
 ```
 
