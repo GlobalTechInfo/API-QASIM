@@ -2,7 +2,9 @@
 ```bash
 > npm i api-qasim
 ```
-
+```bash
+> yarn add api-qasim
+```
 ### Example Usage FB VIDEO
 
 ```js
