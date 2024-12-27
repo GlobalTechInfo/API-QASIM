@@ -7,10 +7,22 @@
 ```bash
 > yarn add api-qasim
 ```
-### Usage
+### Usage Import
+
+**Common js**
+```js
+const Qasim = require('api-qasim');
+
+```
+**ESM Module**
+```js
+import pkg from 'api-qasim';
+
+```
+### Usage of functions
 
 ```js
-    const Qasim = require('api-qasim');
+const Qasim = require('api-qasim');
 
 (async () => {
   try {
@@ -79,3 +91,100 @@ const Qasim = require('api-qasim');
 })();
 
 ```
+
+## Following Functions/Endpoints Are Working
+
+```js
+Qasim.wallpapercraft('query');  // wallpaper search query e.g 'sky'
+
+
+Qasim.wallpaper('query');   //wallpapers search query e.g 'technology'
+
+
+Qasim.styletext('teks');   // text that you wana convert in various styles e.g 'hello'
+
+
+Qasim.ringtone('Title');  // title of the ringtone that you wana search e.g 'Shape of You'
+
+
+Qasim.mediaumma('url');   // some media url from mediaumma website
+
+
+Qasim.wikimedia('query');  // search query for images from Wikimedia e.g 'Laptop'
+
+
+Qasim.tiktokDl('url');     // url of tiktok media, complete tiktok scraper
+
+
+Qasim.xdown('url');       // url of twitter media, complete twitter scraper
+
+
+Qasim.stickersearch('query');  // query for sticker search e.g 'Babar Azam'
+
+
+Qasim.trendtwit('country name');  // Trending Twitter Tags. use Country e.g 'Pakistan'
+
+
+Qasim.zerochan('anime name');     // some anime name e.g 'itachi'
+
+
+Qasim.bitly('url');     //  url that you wana convert/shorten to bit.ly
+
+
+Qasim.webtoons('query');  // some search query e.g 'ignite'
+
+
+Qasim.facebook('fb video url');  // works well with reels
+
+
+Qasim.ssweb('url');     // url of the page from where you wana get screenshot
+
+
+Qasim.pinterest('query');  // image search query e.g 'Electronics'
+
+
+Qasim.gempa();   // Earthquake info only for Indonesia
+
+
+Qasim.cariresep('url');  // Food Recipes web url e.g
+
+
+Qasim.tinyurl('url');    // Link shortener , url that you wana shorten
+
+
+Qasim.apkmirror('apk name');   // some apk search query e.g 'whatsapp'
+
+
+Qasim.weather('City or Country'); // weather info query e.g 'Lahore'
+
+
+Qasim.apksearch('apk name');     // some apk search query e.g 'facebook'
+
+
+Qasim.happymod('apk name');      // some apk search query e.g 'Telegram'
+
+
+Qasim.mangatoon('anime name');  // some anime name e.g 'nezoku'
+
+
+Qasim.quotesanime();
+
+
+Qasim.artinama('name');    // some name for india only
+
+
+Qasim.wattpad('query');    // wattpad search query e.g 'japan'
+
+
+Qasim.playstore'Apk Name');   // some apk search query e.g 'whatsapp'
+
+
+Qasim.wikisearch('query');    // wikipedia search query e.g 'heroku'
+
+
+Qasim.konachan('query');
+
+```
+
+
+**Going To Add Many More Functions In Future**
