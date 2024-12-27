@@ -2,6 +2,8 @@
 ```bash
 > npm i api-qasim
 ```
+**Or**
+
 ```bash
 > yarn add api-qasim
 ```
