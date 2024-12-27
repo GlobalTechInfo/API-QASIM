@@ -1,1 +1,19 @@
-const _0x33566e=_0x194f;(function(_0x3cc521,_0x3f5acb){const _0x436f56=_0x194f,_0x588a4e=_0x3cc521();while(!![]){try{const _0x4d167c=parseInt(_0x436f56(0x12b))/(0x7*0x542+0x5ea+-0x2ab7)+parseInt(_0x436f56(0x123))/(-0x4ff+-0x10*-0x227+-0x5e3*0x5)*(-parseInt(_0x436f56(0x128))/(0x9c1+0x17*0x59+-0x13*0xef))+-parseInt(_0x436f56(0x129))/(-0x1*-0xc0b+-0xe77+0x270)+-parseInt(_0x436f56(0x127))/(-0x1*0x2335+0x28*-0x5+0x2402)+parseInt(_0x436f56(0x121))/(0x17d3+-0x29*0x6f+-0x606)*(parseInt(_0x436f56(0x12a))/(0x2709+-0xf37+0x17cb*-0x1))+parseInt(_0x436f56(0x124))/(-0x1b28+-0x11*-0x1f0+-0x5c0)*(-parseInt(_0x436f56(0x120))/(-0x1*-0x1ac0+0xd3*0x9+-0x1*0x2222))+-parseInt(_0x436f56(0x126))/(0x87*-0x25+-0x2615+0x1336*0x3)*(-parseInt(_0x436f56(0x122))/(-0x3d4+0xac*-0x2a+0x2017*0x1));if(_0x4d167c===_0x3f5acb)break;else _0x588a4e['push'](_0x588a4e['shift']());}catch(_0x180f50){_0x588a4e['push'](_0x588a4e['shift']());}}}(_0x31fb,0x3ac62+0x66fd6*0x1+-0x62a7b));function _0x194f(_0x3398f7,_0xfaea8a){const _0x278d38=_0x31fb();return _0x194f=function(_0x10cd6b,_0x3786fc){_0x10cd6b=_0x10cd6b-(-0x1*-0x2417+0x1939*0x1+-0x3c31);let _0x2d4b48=_0x278d38[_0x10cd6b];return _0x2d4b48;},_0x194f(_0x3398f7,_0xfaea8a);}function _0x31fb(){const _0x5214d1=['./api-qasi','28746dIFqJS','4638lZYRxP','11HaiQli','2OLJdTS','240CCDgqy','exports','7100850AJTJKt','2474950NoHuuJ','77889INjNZJ','1021192zjnphA','3038vJIUKw','84997hrwyRG'];_0x31fb=function(){return _0x5214d1;};return _0x31fb();}const {merdekanews,stickersearch,trendtwit,zerochan,anoboys,film,bitly,webtoons,facebook,ssweb,pinterest,gempa,cariresep,tinyurl,textmakervid,apkmirror,weather,android1,happymod,nickff,nickml,corona,mangatoon,quotesanime,artinama,wattpad,playstore,wikisearch,konachan,wallpapercraft,wallpaper,styletext,ringtone,mediaumma,wikimedia,tiktokDl,xdown}=require(_0x33566e(0x11f)+'m'),Qasim={'merdekanews':merdekanews,'stickersearch':stickersearch,'trendtwit':trendtwit,'zerochan':zerochan,'anoboys':anoboys,'film':film,'bitly':bitly,'webtoons':webtoons,'facebook':facebook,'ssweb':ssweb,'pinterest':pinterest,'gempa':gempa,'cariresep':cariresep,'tinyurl':tinyurl,'textmakervid':textmakervid,'apkmirror':apkmirror,'weather':weather,'android1':android1,'happymod':happymod,'nickff':nickff,'nickml':nickml,'corona':corona,'mangatoon':mangatoon,'quotesanime':quotesanime,'artinama':artinama,'wattpad':wattpad,'playstore':playstore,'wikisearch':wikisearch,'konachan':konachan,'wallpapercraft':wallpapercraft,'wallpaper':wallpaper,'styletext':styletext,'ringtone':ringtone,'mediaumma':mediaumma,'wikimedia':wikimedia,'tiktokDl':tiktokDl,'xdown':xdown};module[_0x33566e(0x125)]=Qasim;
+const { 
+  merdekanews, stickersearch, trendtwit, zerochan, anoboys, film, bitly,
+  webtoons, facebook, ssweb, pinterest, gempa, cariresep, tinyurl, 
+  textmakervid, apkmirror, weather, apksearch, happymod, nickff, nickml, corona, 
+  mangatoon, quotesanime, artinama, wattpad, playstore, wikisearch, 
+  konachan, wallpapercraft, wallpaper, styletext, ringtone, mediaumma, 
+  wikimedia, tiktokDl, xdown 
+} = require('./api-qasim');
+
+const Qasim = {
+  merdekanews, stickersearch, trendtwit, zerochan, anoboys, film, bitly,
+  webtoons, facebook, ssweb, pinterest, gempa, cariresep, tinyurl,
+  textmakervid, apkmirror, weather, apksearch, happymod, nickff, nickml, corona, 
+  mangatoon, quotesanime, artinama, wattpad, playstore, wikisearch, 
+  konachan, wallpapercraft, wallpaper, styletext, ringtone, mediaumma, 
+  wikimedia, tiktokDl, xdown
+};
+
+module.exports = Qasim;
