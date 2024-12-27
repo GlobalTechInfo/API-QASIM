@@ -1,11 +1,7 @@
 {
   "name": "api-qasim",
   "version": "1.1.0",
-  "description": "An API for downloading Facebook videos and scraping TikTok content. Provides easy access to download HD Wallpapers, mod apks, and metadata from various platforms.",
-  "main": "index.js",
-  "scripts": {
-    "test": "node test.js"
-  },
+  "description": "A collection of APIs for various media downloads, including TikTok, Twitter, and more. Provides easy access to download HD Wallpapers, mod apks, and metadata from various platforms.",
   "keywords": [
     "ModApk",
     "Ringtone",
@@ -34,8 +30,29 @@
   ],
   "author": "GlobalTechInfo",
   "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node src/test.js"
+  },
   "dependencies": {
-    "axios": "^1.7.2"
+    "axios": "^1.7.2",
+    "cheerio": "^1.0.0-rc.12",
+    "node-fetch": "^2.6.1",
+    "request": "^2.88.2"
+  },
+  "private": false,
+  "main": "src/index.js",
+  "exports": {
+    "import": "./src/index.js",
+    "require": "./src/index.js"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
   },
   "repository": {
     "type": "git",
