@@ -36,13 +36,13 @@
 **Usage Individually**
 
 ```js
-#Ringtones Search
+// Using the ringtones search function
 
 const Qasim = require('api-qasim');
 
 (async () => {
   try {
-    // Using the ringtone function
+    
     const ringtoneResult = await Qasim.ringtone('nokia');
     console.log('Ringtones:', ringtoneResult);
   } catch (error) {
@@ -50,13 +50,13 @@ const Qasim = require('api-qasim');
   }
 })();
 
-# Apk Search
+// Using the APK search function
 
 const Qasim = require('api-qasim');
 
 (async () => {
   try {
-    // Using the APK search function
+
     const apksearchResult = await Qasim.apksearch('telegram');
     console.log('Android1 APK:', apksearchResult);
   } catch (error) {
@@ -64,13 +64,13 @@ const Qasim = require('api-qasim');
   }
 })();
 
-# Weather Info
+// Using the weather info function
 
 const Qasim = require('api-qasim');
 
 (async () => {
   try {
-    // Using the weather function
+    
     const weatherResult = await Qasim.weather('Karachi');
     console.log('Weather of Karachi:', weatherResult);
   } catch (error) {
