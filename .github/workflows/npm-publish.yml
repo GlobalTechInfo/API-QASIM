@@ -26,23 +26,34 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
+      # Checkout the repository
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # Set Git user identity for commits
+      - name: Set Git identity
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
+
+      # Set up Node.js
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
 
+      # Install dependencies
       - name: Install dependencies
         run: npm ci
 
+      # Bump package version (patch)
       - name: Set package version
         run: npm version patch
 
+      # Publish to npm
       - name: Publish to npm
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.npm_token }}
-
+          
