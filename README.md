@@ -7,17 +7,16 @@
 ```bash
 > yarn add api-qasim
 ```
-### Usage Import
 
-**Common js**
+**Import In Common js**
 ```js
 const Qasim = require('api-qasim');
 
 ```
-**ESM Module**
+**Import In ESM Module**
 ```js
 import pkg from 'api-qasim';
-
+const { ringtone } = pkg;
 ```
 ### Usage of functions
 
