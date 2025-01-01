@@ -30,7 +30,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Set Git user identity for commits
+      # Set Git identity for version bump commit
       - name: Set Git identity
         run: |
           git config --global user.email "actions@github.com"
@@ -47,11 +47,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      # Bump package version (patch)
+      # Bump package version
       - name: Set package version
         run: npm version patch
 
-      # Publish to npm
+      # Publish to npm with authentication token
       - name: Publish to npm
         run: npm publish
         env:
