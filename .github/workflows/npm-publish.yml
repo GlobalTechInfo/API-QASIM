@@ -36,6 +36,12 @@ jobs:
           git config --global user.email "actions@github.com"
           git config --global user.name "GitHub Actions"
 
+      # Remove the existing Git tag if it exists
+      - name: Delete existing Git tag (if exists)
+        run: |
+          git tag -d v$(node -p "require('./package.json').version") || true
+          git push --delete origin v$(node -p "require('./package.json').version") || true
+
       # Set up Node.js
       - name: Set up Node.js
         uses: actions/setup-node@v4
