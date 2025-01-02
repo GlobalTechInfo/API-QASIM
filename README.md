@@ -92,6 +92,21 @@ const Qasim = require('api-qasim');
 ## Following Functions/Endpoints Are Working
 
 ```js
+Qasim.googleImage('query');  // search query for downloading image from google
+
+
+Qasim.gitclone('git url');   // Some Github Repository Url
+
+
+Qasim.igdl('Instagram url'); // Instagram Post Url, e.g link of reel,image, video etc.
+
+
+Qasim.fbdl('facebook url');  // Facebook Post Url e.g reel, image, video etc.
+
+
+Qasim.mediafire('mediafire url');  // url of some file on mediafire
+
+
 Qasim.wallpapercraft('query');  // wallpaper search query e.g 'sky'
 
 
