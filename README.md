@@ -18,7 +18,7 @@ const Qasim = require('api-qasim');
 import pkg from 'api-qasim';
 const { ringtone } = pkg;
 ```
-### Usage of functions
+### Example Usage cjs
 
 ```js
 const Qasim = require('api-qasim');
