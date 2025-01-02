@@ -47,7 +47,7 @@ const Qasim = require('api-qasim');
     let igData = igResponse.data;
     console.log('Instagram Data:', igData);
 
-    // === GitHub Clone ===
+    // === Mediafire Dl ===
     const mediafireUrl = "Mediafire Url";
     let mediafireResponse = await Qasim.mediafire(mediafireUrl);
     let mediafireData = mediafireResponse;
@@ -62,7 +62,7 @@ const Qasim = require('api-qasim');
 
 ```
 --------
-
+### Simplified Example Usage
 ```js
 const Qasim = require('api-qasim');
 
@@ -70,7 +70,7 @@ const Qasim = require('api-qasim');
   try {
 
     // === Ringtones Dl ===
-    const ringtoneResult = await Qasim.ringtone('Shape of You');
+    const ringtoneResult = await Qasim.ringtone('Nokia');
     console.log('Ringtones:', ringtoneResult);
 
     // === Apk Search ===
@@ -86,54 +86,8 @@ const Qasim = require('api-qasim');
   }
 })();
 
-
   ```
-**Usage Individually**
 
-```js
-// Using the ringtones search function
-
-const Qasim = require('api-qasim');
-
-(async () => {
-  try {
-    
-    const ringtoneResult = await Qasim.ringtone('nokia');
-    console.log('Ringtones:', ringtoneResult);
-  } catch (error) {
-    console.error('Error:', error);
-  }
-})();
-
-// Using the APK search function
-
-const Qasim = require('api-qasim');
-
-(async () => {
-  try {
-
-    const apksearchResult = await Qasim.apksearch('telegram');
-    console.log('Android1 APK:', apksearchResult);
-  } catch (error) {
-    console.error('Error:', error);
-  }
-})();
-
-// Using the weather info function
-
-const Qasim = require('api-qasim');
-
-(async () => {
-  try {
-    
-    const weatherResult = await Qasim.weather('Karachi');
-    console.log('Weather of Karachi:', weatherResult);
-  } catch (error) {
-    console.error('Error:', error);
-  }
-})();
-
-```
 
 ## Following Functions/Endpoints Are Working
 
