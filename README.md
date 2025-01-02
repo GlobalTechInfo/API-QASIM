@@ -36,7 +36,7 @@ const Qasim = require('api-qasim');
     console.log('GitHub Clone Data:', gitcloneResponse);  // Log GitHub clone response
 
     // === Facebook Usage ===
-    const fbtext = "Facebook url";
+    const fbtext = "Facebook Url";
     let fbResponse = await Qasim.fbdl(fbtext);
     let fbData = fbResponse.data;
     console.log('Facebook Data:', fbData);
@@ -52,14 +52,12 @@ const Qasim = require('api-qasim');
     let mediafireResponse = await Qasim.mediafire(mediafireUrl);
     let mediafireData = mediafireResponse;
     console.log('MediaFire Data:', mediafireData);
-
-  } catch (error) {
-    console.error('Error:', error);  // Fixed the syntax error
+} catch (error) {
+    console.error('Error:', error);
   }
 }
 
 ();
-
 ```
 --------
 ### Simplified Example Usage
