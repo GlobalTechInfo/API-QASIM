@@ -55,7 +55,7 @@ jobs:
 
       # Bump package version
       - name: Set package version
-        run: npm version minor
+        run: npm version patch
 
       # Publish to npm with authentication token
       - name: Publish to npm
