@@ -36,14 +36,8 @@ jobs:
           git config --global user.email "actions@github.com"
           git config --global user.name "GitHub Actions"
 
-      # Remove the existing Git tag if it exists
-      - name: Delete existing Git tag (if exists)
-        run: |
-          git tag -d v$(node -p "require('./package.json').version") || true
-          git push --delete origin v$(node -p "require('./package.json').version") || true
-
-      # Set up Node.js
-      - name: Set up Node.js
+      # Set up Node.js for npm
+      - name: Set up Node.js for npm
         uses: actions/setup-node@v4
         with:
           node-version: 18
@@ -53,13 +47,36 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      # Bump package version
-      - name: Set package version
-        run: npm version patch
+      # Bump version in package.json and package-lock.json
+      - name: Bump package version
+        run: |
+          # Bump version (patch, minor, or major)
+          npm version patch
 
-      # Publish to npm with authentication token
+      # Publish to npm
       - name: Publish to npm
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.npm_token }}
+
+      # Create a new Git tag for the release, but no commit to main
+      - name: Create Git tag
+        run: |
+          # Get version from package.json
+          VERSION=$(node -p "require('./package.json').version")
+
+          # Create a new Git tag for the release
+          git tag v$VERSION
+
+          # Push the tag to GitHub (without affecting the main branch)
+          git push origin v$VERSION
+
+      # Create GitHub release using the tag (without committing to the main branch)
+      - name: Create GitHub release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            dist/*
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
