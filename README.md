@@ -95,6 +95,9 @@ const Qasim = require('api-qasim');
 
 ## Following Functions/Endpoints Are Working
 
+<details>
+<summary>𝗖𝗟𝗜𝗖𝗞 𝗛𝗘𝗥𝗘 𝗧𝗢 𝗩𝗜𝗘𝗪</summary>
+
 ```js
 Qasim.googleImage('query');  // search query for downloading image from google
 
@@ -201,6 +204,6 @@ Qasim.wikisearch('query');    // wikipedia search query e.g 'heroku'
 Qasim.konachan('query');    // anime search query e.g 'neko'
 
 ```
-
+</details>
 
 **Going To Add Many More Functions In Future**
