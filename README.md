@@ -222,3 +222,11 @@ Qasim.konachan('query');    // anime search query e.g 'neko'
     <img src="https://img.shields.io/badge/YouTube-@GlobalTechInfo-000000?style=for-the-badge&logo=youtube&logoColor=white">
   </a>
 </p>
+
+<h1 align="center"> My WhatsApp Bot Project </h1>
+
+<p align="center">
+<a href="https://github.com/GlobalTechInfo/ULTRA-MD"><img title="Author" src="https://img.shields.io/badge/ULTRA MD-black?style=for-the-badge&logo=Github"></a>
+<p/>
+
+<p align="center">© GlobalTechInfo 2025</p>
