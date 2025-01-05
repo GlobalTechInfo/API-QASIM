@@ -13,6 +13,7 @@
 ```bash
 > yarn add api-qasim
 ```
+-----
 
 **Import In Common js**
 ```js
@@ -24,6 +25,8 @@ const Qasim = require('api-qasim');
 import pkg from 'api-qasim';
 const { ringtone } = pkg;
 ```
+-----
+
 ### Example Usage cjs
 
 ```js
@@ -91,7 +94,7 @@ const Qasim = require('api-qasim');
 })();
 
   ```
-
+------
 
 ## Following Functions/Endpoints Are Working
 
@@ -206,6 +209,8 @@ Qasim.konachan('query');    // anime search query e.g 'neko'
 ```
 </details>
 
+-------
+
 ### 🧑‍💻 Connect with the Developer
 
 <p align="center">
@@ -223,10 +228,14 @@ Qasim.konachan('query');    // anime search query e.g 'neko'
   </a>
 </p>
 
-<h1 align="center"> My WhatsApp Bot Project </h1>
+------
+
+<h1 align="center"> MY WHATSAPP BOT </h1>
 
 <p align="center">
-<a href="https://github.com/GlobalTechInfo/ULTRA-MD"><img title="Author" src="https://img.shields.io/badge/ULTRA MD-black?style=for-the-badge&logo=Github"></a>
+<a href="https://github.com/GlobalTechInfo/ULTRA-MD"><img title="Author" src="https://img.shields.io/badge/ULTRA-MD-black?style=for-the-badge&logo=Github"></a>
 <p/>
 
+------
+  
 <p align="center">© GlobalTechInfo 2025</p>
