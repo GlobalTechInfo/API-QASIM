@@ -206,4 +206,19 @@ Qasim.konachan('query');    // anime search query e.g 'neko'
 ```
 </details>
 
-**Going To Add Many More Functions In Future**
+### 🧑‍💻 Connect with the Developer
+
+<p align="center">
+  <a href="https://github.com/GlobalTechInfo">
+    <img src="https://img.shields.io/badge/GitHub-GlobalTechInfo-blue?style=for-the-badge&logo=github&logoColor=white">
+  </a>
+  <a href="https://t.me/GlobalTechOwner">
+    <img src="https://img.shields.io/badge/Telegram-@GlobalTechOwner-1DA1F2?style=for-the-badge&logo=telegram&logoColor=white">
+  </a>
+  <a href="https://wa.me/message/923444844060">
+    <img src="https://img.shields.io/badge/WhatsApp-Click%20Here%20to%20Message%20Me-25D366?style=for-the-badge&logo=whatsapp&logoColor=white">
+  </a>
+  <a href="https://youtube.com/@GlobalTechInfo">
+    <img src="https://img.shields.io/badge/YouTube-@GlobalTechInfo-000000?style=for-the-badge&logo=youtube&logoColor=white">
+  </a>
+</p>
