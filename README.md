@@ -98,9 +98,8 @@ const Qasim = require('api-qasim');
 
 ## Following Functions/Endpoints Are Working
 
-<details>
-<summary>𝗖𝗟𝗜𝗖𝗞 𝗛𝗘𝗥𝗘 𝗧𝗢 𝗩𝗜𝗘𝗪</summary>
 
+**Downloaders**
 ```js
 Qasim.googleImage('query');  // search query for downloading image from google
 
@@ -123,9 +122,6 @@ Qasim.wallpapercraft('query');  // wallpaper search query e.g 'sky'
 Qasim.wallpaper('query');   //wallpapers search query e.g 'technology'
 
 
-Qasim.styletext('teks');   // text that you wana convert in various styles e.g 'hello'
-
-
 Qasim.ringtone('title');  // title of the ringtone that you wana search e.g 'Shape of You'
 
 
@@ -144,46 +140,91 @@ Qasim.xdown('url');       // url of twitter media, complete twitter scraper
 Qasim.stickersearch('query');  // query for sticker search e.g 'Babar Azam'
 
 
-Qasim.trendtwit('country');  // Trending Twitter Tags. use Country e.g 'Pakistan'
-
-
-Qasim.zerochan('query');     // some anime name e.g 'itachi'
-
-
-Qasim.bitly('url');     //  url that you wana convert/shorten to bit.ly
-
-
-Qasim.webtoons('query');  // some search query e.g 'ignite'
-
-
 Qasim.facebook('url');  // works well with reels
-
-
-Qasim.ssweb('url');     // url of the page from where you wana get screenshot
 
 
 Qasim.pinterest('query');  // image search query e.g 'Electronics'
 
 
-Qasim.gempa();   // Earthquake info only for Indonesia
+Qasim.Pinterest2('query');  // image search query e.g 'Cat'
+
+
+Qasim.zerochan('query');     // some anime name e.g 'itachi'
 
 
 Qasim.cariresep('url');  // Food Recipes web url e.g https://resepkoki.id/resep-nasi-daun-jeruk-praktis-untuk-menu-sehari-hari
 
 
+Qasim.webtoons('query');  // some search query e.g 'ignite'
+
+
+```
+------
+
+**Stalk Features**
+
+```js
+
+Qasim.githubStalk('user')  // Github Username
+
+Qasim.tiktokStalk('user')  // TikTok Username
+
+Qasim.freefireStalk('userId')  // Free Fire User Id
+
+Qasim.igStalk('userName')   // Instagram Username
+
+Qasim.npmStalk('query')  // npm package name e.g 'api-qasim'
+
+```
+-----
+
+**Some Tools**
+
+```js
+
+Qasim.konachan('query');    // anime search query e.g 'neko'
+
+
+Qasim.styletext('teks');   // text that you wana convert in various styles e.g 'hello'
+
+
+Qasim.trendtwit('country');  // Trending Twitter Tags. use Country e.g 'Pakistan'
+
+
+Qasim.bitly('url');     //  url that you wana convert/shorten to bit.ly
+
+
+Qasim.ssweb('url');     // url of the page from where you wana get screenshot
+
+
+Qasim.gempa();   // Earthquake info only for Indonesia
+
+
 Qasim.tinyurl('url');    // Link shortener , url that you wana shorten
 
+```
+------
+
+**Apk Search**
+
+```js
+
+Qasim.playstore('search');   // some apk search query e.g 'whatsapp'
 
 Qasim.apkmirror('querry');   // some apk search query e.g 'whatsapp'
 
-
-Qasim.weather('city'); // weather info query e.g 'Lahore'
-
-
 Qasim.apksearch('query');     // some apk search query e.g 'facebook'
 
-
 Qasim.happymod('query');      // some apk search query e.g 'Telegram'
+
+```
+
+--------
+
+**Information**
+
+```js
+Qasim.weather('city'); // weather info query e.g 'Lahore'
 
 
 Qasim.mangatoon('search');  // some anime name e.g 'nezoku'
@@ -198,16 +239,10 @@ Qasim.artinama('query');    // some name for india only
 Qasim.wattpad('query');    // wattpad search query e.g 'japan'
 
 
-Qasim.playstore('search');   // some apk search query e.g 'whatsapp'
-
-
 Qasim.wikisearch('query');    // wikipedia search query e.g 'heroku'
 
 
-Qasim.konachan('query');    // anime search query e.g 'neko'
-
 ```
-</details>
 
 -------
 
