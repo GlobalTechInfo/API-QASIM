@@ -99,7 +99,25 @@ const Qasim = require('api-qasim');
 ## Following Functions/Endpoints Are Working
 
 
+
+**Usage Islamic Features**
+
+```js
+
+const Qasim = require('api-qasim');
+
+// Use any of the functions, for example, NiatAshar:
+Qasim.NiatAshar().then(result => {
+  console.log(result);
+}).catch(error => {
+  console.error('Error:', error);
+});
+
+```
+-------
+
 **Islamic Features**
+
 
 ```js
 
