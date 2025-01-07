@@ -297,6 +297,25 @@ Qasim.wikisearch('query');    // wikipedia search query e.g 'heroku'
 
 -------
 
+**Random Wallpapers**
+
+```js
+Qasim.Game();
+
+Qasim.Technology();
+
+Qasim.Programming();
+
+Qasim.Mountain();
+
+Qasim.Islamic();
+
+Qasim.CyberSpace();
+
+```
+
+-------
+
 ### 🧑‍💻 Connect with the Developer
 
 <p align="center">
