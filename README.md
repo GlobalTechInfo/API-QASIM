@@ -99,7 +99,40 @@ const Qasim = require('api-qasim');
 ## Following Functions/Endpoints Are Working
 
 
-**Downloaders**
+**Islamic Features**
+
+```js
+
+Qasim.Tahlil();
+
+Qasim.Wirid();
+
+Qasim.AyatKursi();
+
+Qasim.DoaHarian();
+
+Qasim.NiatSalaht();
+
+Qasim.NiatFajar();
+
+Qasim.NiatZuhur();
+
+Qasim.NiatAshar();
+
+Qasim.NiatMaghrib();
+
+Qasim.NiatIsha();
+
+Qasim.BacaanSalaht();
+
+Qasim.AsmaulHusna();
+
+Qasim.QisaNabi();
+
+```
+-------
+
+**Downloads Features**
 ```js
 Qasim.googleImage('query');  // search query for downloading image from google
 
