@@ -3,6 +3,8 @@
   <p align="center"><img src="https://img.shields.io/badge/WELCOME%20TO -API QASIM-green?colorA=%23ff0000&colorB=%23017e40&style=flat-square">  
 
   [![npm package](https://img.shields.io/npm/v/api-qasim?logo=npm&style=flat-square)](https://www.npmjs.org/package/api-qasim)
+<a href="https://github.com/GlobalTechInfo/API-QASIM/issues"><img title="Issues" src="https://img.shields.io/github/issues/GlobalTechInfo/API-QASIM?label=Issues&color=success&style=flat-square"></a>
+<a href="https://github.com/GlobalTechInfo/API-QASIM/issues?q=is%3Aissue+is%3Aclosed"><img title="Issues" src="https://img.shields.io/github/issues-closed/GlobalTechInfo/API-QASIM?label=Issues&color=red&style=flat-square"></a>
   
 </h3>
 
