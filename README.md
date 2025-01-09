@@ -3,8 +3,7 @@
   <p align="center"><img src="https://img.shields.io/badge/WELCOME%20TO -API QASIM-green?colorA=%23ff0000&colorB=%23017e40&style=flat-square">  
 
   [![npm package](https://img.shields.io/npm/v/api-qasim?logo=npm&style=flat-square)](https://www.npmjs.org/package/api-qasim)
-[![Coverage Status](https://img.shields.io/codecov/c/github/GlobalTechInfo/API-QASIM?style=flat-square&logo=codecov)](https://codecov.io/gh/GlobalTechInfo/api-qasim)
-
+  
 </h3>
 
 ### Instalation :
