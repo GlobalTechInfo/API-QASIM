@@ -220,13 +220,13 @@ Qasim.webtoons('query');  // some search query e.g 'ignite'
 
 ```js
 
-Qasim.githubStalk('user')  // Github Username
+Qasim.githubStalk('user')  // Github Username e.g 'GlobalTechInfo'
 
-Qasim.tiktokStalk('user')  // TikTok Username
+Qasim.tiktokStalk('user')  // TikTok Username  e.g.  'discoverpakistantv'
 
 Qasim.freefireStalk('userId')  // Free Fire User Id
 
-Qasim.igStalk('userName')   // Instagram Username
+Qasim.igStalk('userName')   // Instagram Username  e.g 'truepakistanofficial'
 
 Qasim.npmStalk('query')  // npm package name e.g 'api-qasim'
 
@@ -239,21 +239,15 @@ Qasim.npmStalk('query')  // npm package name e.g 'api-qasim'
 
 Qasim.konachan('query');    // anime search query e.g 'neko'
 
-
 Qasim.styletext('teks');   // text that you wana convert in various styles e.g 'hello'
-
 
 Qasim.trendtwit('country');  // Trending Twitter Tags. use Country e.g 'Pakistan'
 
-
 Qasim.bitly('url');     //  url that you wana convert/shorten to bit.ly
-
 
 Qasim.ssweb('url');     // url of the page from where you wana get screenshot
 
-
 Qasim.gempa();   // Earthquake info only for Indonesia
-
 
 Qasim.tinyurl('url');    // Link shortener , url that you wana shorten
 
@@ -281,18 +275,13 @@ Qasim.happymod('query');      // some apk search query e.g 'Telegram'
 ```js
 Qasim.weather('city'); // weather info query e.g 'Lahore'
 
-
 Qasim.mangatoon('search');  // some anime name e.g 'nezoku'
-
 
 Qasim.quotesanime();
 
-
-Qasim.artinama('query');    // some name for india only
-
+Qasim.artinama('query');    // some name for its meaning
 
 Qasim.wattpad('query');    // wattpad search query e.g 'japan'
-
 
 Qasim.wikisearch('query');    // wikipedia search query e.g 'heroku'
 
@@ -342,7 +331,7 @@ Qasim.CyberSpace();
 <h1 align="center"> MY WHATSAPP BOT </h1>
 
 <p align="center">
-<a href="https://github.com/GlobalTechInfo/ULTRA-MD"><img title="Author" src="https://img.shields.io/badge/ULTRA-MD-black?style=for-the-badge&logo=Github"></a>
+<a href="https://github.com/GlobalTechInfo/MEGA-AI"><img title="Author" src="https://img.shields.io/badge/MEGA-AI-black?style=for-the-badge&logo=Github"></a>
 <p/>
 
 ------
