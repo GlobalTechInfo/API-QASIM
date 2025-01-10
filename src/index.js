@@ -10,7 +10,7 @@ const {
 const { igdl } = require('./insta');
 const { fbdl } = require('./fb');
 const { ytmp3, ytmp4 } = require('./youtube');
-const { ytsearch } = require('./ytsearch');
+const ytsearch = require('./ytsearch');
 
 const Qasim = {
   merdekanews, stickersearch, trendtwit, zerochan, anoboys, film, bitly, NiatFajar, NiatZuhur, NiatAshar, NiatMaghrib, NiatIsha,
