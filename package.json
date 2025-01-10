@@ -1,10 +1,13 @@
 {
   "name": "api-qasim",
-  "version": "3.2.3",
+  "version": "3.2.4",
   "type": "commonjs",
   "description": "A collection of APIs for various media downloads, including TikTok, Twitter, and more. Provides easy access to download HD Wallpapers, mod apks, and metadata from various platforms.",
   "keywords": [
     "ModApk",
+    "YouTube",
+    "ytaudio",
+    "ytvideo",
     "Ringtone",
     "Wikimedia",
     "StyleText",
@@ -38,7 +41,11 @@
   "dependencies": {
     "axios": "^1.7.2",
     "cheerio": "^1.0.0-rc.12",
-    "node-fetch": "^2.6.1"
+    "form-data": "^4.0.0",
+    "tar": "7.4.0",
+    "yt-search": "^2.12.1",
+    "node-fetch": "^2.6.1",
+    "axios-cookiejar-support": "^5.0.5",
   },
   "private": false,
   "main": "src/index.js",
