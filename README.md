@@ -159,12 +159,6 @@ Qasim.QisaNabi();
 Qasim.ytsearch('query')  // search query for YouTube
 
 
-Qasim.ytmp4('url')  // YouTube Video Url
-
-
-Qasim.ytmp3('url')  // url of YouTube video/audio
-
-
 Qasim.googleImage('query');  // search query for downloading image from google
 
 
