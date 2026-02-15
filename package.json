@@ -1,6 +1,6 @@
 {
   "name": "api-qasim",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Universal SDK for QasimDev Rest API - Supporting CJS, ESM, TypeScript, and Browser",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
@@ -34,7 +34,7 @@
     "build:esm": "esbuild src/index.ts --bundle --platform=node --target=node20 --outfile=dist/index.mjs --format=esm --external:fetch",
     "build:browser:esm": "esbuild src/index.ts --bundle --platform=browser --target=es2020 --outfile=dist/browser/index.mjs --format=esm",
     "build:browser:cjs": "esbuild src/index.ts --bundle --platform=browser --target=es2020 --outfile=dist/browser/index.cjs --format=cjs",
-    "build:browser:iife": "esbuild src/index.ts --bundle --platform=browser --target=es2020 --outfile=dist/browser/global.js --format=iife --global-name=Qasim",
+    "build:browser:iife": "esbuild src/index.ts --bundle --platform=browser --target=es2020 --outfile=dist/browser/global.js --format=iife --global-name=API --footer:js='API=API.default||API;'",
     "build:browser": "npm run build:browser:esm && npm run build:browser:cjs && npm run build:browser:iife && npm run minify:browser",
     "minify:browser": "terser dist/browser/index.mjs --compress --mangle --output dist/browser/index.min.mjs && terser dist/browser/index.cjs --compress --mangle --output dist/browser/index.min.cjs && terser dist/browser/global.js --compress --mangle --output dist/browser/global.min.js",
     "fix:cjs": "echo 'module.exports = module.exports.default;' >> dist/index.cjs",
