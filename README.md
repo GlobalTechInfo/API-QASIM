@@ -114,9 +114,9 @@ const result = await api.Weather({ city: 'London' });
 ### Browser (CDN)
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/api-qasim/dist/browser/global.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/api-qasim@4.0.1/dist/browser/global.min.js"></script>
 <script>
-  const api = new Qasim({ apiKey: 'your-api-key' });
+  const api = new API({ apiKey: 'qasim-dev' });
   api.Weather({ city: 'London' }).then(console.log);
 </script>
 ```
@@ -124,7 +124,7 @@ const result = await api.Weather({ city: 'London' });
 ### Browser (ESM)
 
 ```js
-import API from 'https://cdn.jsdelivr.net/npm/api-qasim/dist/browser/index.mjs';
+import API from 'https://cdn.jsdelivr.net/npm/api-qasim@4.0.1/dist/browser/index.mjs';
 
 const api = new API({ apiKey: 'your-api-key' });
 ```
