@@ -9,18 +9,23 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      id-token: write
-      attestations: write
+      id-token: write      # Generates the OIDC token
+      attestations: write  # Generates the badge
 
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
 
       - run: npm install
       - run: npm run build
 
       - run: npm publish --provenance --access public
-      
+        env:
+          # This forces NPM to look for the OIDC token instead of a password
+          NPM_CONFIG_PROVENANCE: true
+          # Unsetting this ensures no ghost tokens interfere
+          NODE_AUTH_TOKEN: ""
+          
