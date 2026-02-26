@@ -19,10 +19,14 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Upgrade NPM
+        run: npm install -g npm@latest
+
       - run: npm install
       - run: npm run build
 
-      - run: npm publish --provenance --access public --registry=https://registry.npmjs.org/
+      - name: Publish
+        run: npm publish --provenance --access public
         env:
           NODE_AUTH_TOKEN: ""
           
