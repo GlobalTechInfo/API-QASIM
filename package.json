@@ -1,6 +1,6 @@
 {
   "name": "api-qasim",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "Universal SDK for QasimDev Rest API - Supporting CJS, ESM, TypeScript, and Browser",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
