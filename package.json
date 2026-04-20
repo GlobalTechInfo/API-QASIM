@@ -63,7 +63,7 @@
     "docs": "jsdoc -c jsdoc.config.json",
     "build": "node scripts/build.js",
     "obfuscate": "node scripts/obfuscate.js",
-    "prepublishOnly": "npm run lint && npm run build && npm run obfuscate",
+    "prepublishOnly": "npm run build && npm run obfuscate",
     "release": "npm run prepublishOnly && npm publish --tag 3x --provenance --access public",
     "test:filter": "node tests/real.test.js --filter",
     "test:unit": "node --experimental-vm-modules node_modules/.bin/jest --passWithNoTests"

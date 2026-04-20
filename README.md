@@ -8,7 +8,7 @@
 [![npm downloads](https://img.shields.io/npm/dm/api-qasim)](https://www.npmjs.com/package/api-qasim)
 [![CI](https://github.com/GlobalTechInfo/api-qasim/actions/workflows/ci.yml/badge.svg)](https://github.com/GlobalTechInfo/api-qasim/actions/workflows/ci.yml)
 
-[📖 API Docs](https://globaltechinfo.github.io/api-qasim/docs/3x) · [📦 npm](https://www.npmjs.com/package/api-qasim) · [🐛 Issues](https://github.com/GlobalTechInfo/api-qasim/issues)
+[📖 API Docs](https://globaltechinfo.github.io/api-qasim) · [📦 npm](https://www.npmjs.com/package/api-qasim) · [🐛 Issues](https://github.com/GlobalTechInfo/api-qasim/issues)
 
 > **You are viewing the `3.x` legacy branch.**  
 > The latest version is `4.x` with a different API surface — check its own documentation.
@@ -71,7 +71,7 @@ const { githubStalk, tiktokStalk }    = require('api-qasim/social');
 ## API Reference
 
 Full auto-generated JSDoc documentation is available at:  
-**https://globaltechinfo.github.io/api-qasim/docs/3x**
+**https://globaltechinfo.github.io/api-qasim/**
 
 ### Media Downloaders
 
