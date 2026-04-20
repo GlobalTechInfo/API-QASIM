@@ -1,5 +1,3 @@
-# Publish only src/, README, CHANGELOG, LICENSE
-# Everything else stays off npm
 
 .github/
 tests/
