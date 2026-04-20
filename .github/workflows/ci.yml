@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [3x, develop]
+    branches: [3x]
   pull_request:
     branches: [3x]
 
