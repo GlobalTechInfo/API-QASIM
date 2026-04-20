@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+    branches: [3x, develop]
+  pull_request:
+    branches: [3x]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint:
+    name: Install & Build (Node ${{ matrix.node }})
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [20, 22]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js ${{ matrix.node }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build (.mjs wrappers)
+        run: npm run build
+
+  # Note: Real integration tests (npm test) must be run manually on a machine
+  # with internet access before tagging a release. Tests hit live third-party
+  # APIs so they cannot run in CI without network access to external sites.

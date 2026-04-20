@@ -1,0 +1,18 @@
+# Publish only src/, README, CHANGELOG, LICENSE
+# Everything else stays off npm
+
+.github/
+tests/
+scripts/
+docs/
+coverage/
+dist/
+*.test.js
+.eslintrc.js
+jest.config.js
+jsdoc.config.json
+.env*
+*.tgz
+node_modules/
+
+src-plain/

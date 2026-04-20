@@ -1,0 +1,95 @@
+{
+  "name": "api-qasim",
+  "version": "3.3.0",
+  "description": "A comprehensive collection of scraper & downloader APIs \u2014 TikTok, Instagram, Facebook, Wallpapers, Islamic content, Weather, and more.",
+  "author": "Qasim Ali",
+  "maintainers": [
+    {
+      "name": "Qasim Ali \ud83e\udd8b",
+      "url": "https://github.com/GlobalTechInfo"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "api",
+    "tiktok",
+    "instagram",
+    "facebook",
+    "google",
+    "bing",
+    "downloader",
+    "scraper",
+    "media",
+    "api-qasim"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "main": "./src/index.js",
+  "exports": {
+    ".": {
+      "require": "./src/index.js",
+      "import": "./src/index.mjs",
+      "default": "./src/index.js"
+    },
+    "./downloaders": {
+      "require": "./src/scrapers/downloaders.js",
+      "import": "./src/scrapers/downloaders.mjs"
+    },
+    "./islamic": {
+      "require": "./src/scrapers/islamic.js",
+      "import": "./src/scrapers/islamic.mjs"
+    },
+    "./social": {
+      "require": "./src/scrapers/social.js",
+      "import": "./src/scrapers/social.mjs"
+    },
+    "./utils": {
+      "require": "./src/utils/index.js",
+      "import": "./src/utils/index.mjs"
+    }
+  },
+  "files": [
+    "src/",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node tests/real.test.js",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src/ tests/ --ext .js",
+    "lint:fix": "eslint src/ tests/ --ext .js --fix",
+    "docs": "jsdoc -c jsdoc.config.json",
+    "build": "node scripts/build.js",
+    "obfuscate": "node scripts/obfuscate.js",
+    "prepublishOnly": "npm run lint && npm run build && npm run obfuscate",
+    "release": "npm run prepublishOnly && npm publish --tag 3x --provenance --access public",
+    "test:filter": "node tests/real.test.js --filter",
+    "test:unit": "node --experimental-vm-modules node_modules/.bin/jest --passWithNoTests"
+  },
+  "dependencies": {
+    "cheerio": "^1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^10.2.0",
+    "jest": "^30.3.0",
+    "javascript-obfuscator": "^5.4.1",
+    "jsdoc": "^4.0.5",
+    "docdash": "^2.0.2",
+    "@eslint/js": "^9.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GlobalTechInfo/api-qasim.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GlobalTechInfo/api-qasim/issues"
+  },
+  "homepage": "https://globaltechinfo.github.io/api-qasim",
+  "publishConfig": {
+    "tag": "3x",
+    "access": "public",
+    "provenance": true
+  }
+}

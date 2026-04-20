@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+
+dist/
+
+# Coverage
+coverage/
+
+# JSDoc output
+docs/
+
+# npm pack artifacts
+*.tgz
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+
+src-plain/
+tests/
+scripts/obfuscate.js

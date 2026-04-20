@@ -1,0 +1,18 @@
+{
+  "source": {
+    "include": ["src/"],
+    "includePattern": ".+\\.js$",
+    "excludePattern": "(node_modules|dist|src-plain)"
+  },
+  "opts": {
+    "destination": "docs/3x/",
+    "recurse": true,
+    "readme": "README.md"
+  },
+  "plugins": ["plugins/markdown"],
+  "templates": {
+    "cleverLinks": false,
+    "monospaceLinks": false
+  },
+  "theme": "docdash"
+}
